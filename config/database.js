@@ -5,7 +5,7 @@ const Env = use('Env')
 
 /** @type {import('@adonisjs/ignitor/src/Helpers')} */
 const Helpers = use('Helpers')
-const Url = required('url-parse')
+const Url = require('url-parse')
 const DATABASE_URL = new Url(Env.get("DATABASE_URL"))
 
 module.exports = {
